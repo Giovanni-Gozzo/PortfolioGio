@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function createStars() {
   const container = document.querySelector('.unique');
-  for (let i = 0; i < 10000; i++) {
+  const starCount = window.innerWidth <= 768 ? 100 : 10000;
+  for (let i = 0; i < starCount; i++) {
     const star = document.createElement('div');
     star.className = 'star';
     star.style.width = '1px';

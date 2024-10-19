@@ -405,4 +405,8 @@
     width: 3.56em;
     height: 3.56em;
   }
+  .desktop-only {
+    display: none;
+  }
 }
+

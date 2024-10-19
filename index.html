@@ -448,11 +448,11 @@
 		  <img src="images/BHB_Panel.png" alt="GraHire" style="width: 100%; height: auto;">
 		</a>								<p>Voici le panel d'administration du site e-commerce</p>
 
-									<video style="width: 100%; height: auto;" loop autoplay muted>
+									<video class="desktop-only" style="width: 100%; height: auto;" loop autoplay muted>
   <source src="images/BHB.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-								<p> Petit apercu de la premiere page du site e-commerce</p>
+<p> Petit apercu de la premiere page du site e-commerce</p>
 							</div>
 
 							<div class="modal-footer">
@@ -674,8 +674,15 @@
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<script src="js/script.js"></script>
-
+	<script>
+	  if (window.innerWidth > 768) {
+		var script = document.createElement('script');
+		script.src = 'js/script.js';
+		document.body.appendChild(script);
+	  }
+	</script>
+</body>
+</body>
 	</body>
 </html>
 
