@@ -674,7 +674,19 @@
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script>
+  var script = document.createElement('script');
+  script.src = 'js/script.js';
+  document.body.appendChild(script);
 
+  var timeout = setTimeout(function() {
+    document.body.removeChild(script);
+  }, 1000);
+
+  script.onload = function() {
+    clearTimeout(timeout);
+  };
+</script>
 </body>
 </body>
 	</body>
