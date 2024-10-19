@@ -1,0 +1,408 @@
+.unique {
+  margin: 0;
+  height: 120.33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.contient {
+  font-size: 8px;
+  width: 53.33em;
+  height: 53.33em;
+  position: relative;
+}
+
+.Git {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20em;
+  left: 20em;
+  width: 13.33em;
+  height: 13.33em;
+  border-radius: 50%;
+  box-shadow: 0 0 4em rgb(255, 128, 0);
+  animation: squareO 50s linear infinite;
+}
+
+.Git img {
+  width: 100%;
+  height: 100%;
+}
+
+.JS, .HTML, .Python, .Data, .C, .CSS, .Docker, .JAVA, .SQL, .PHP {
+  position: absolute;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-radius: 0.13em 0.13em 0 0;
+  border-radius: 50%;
+    z-index: 10;
+}
+
+.JS {
+  top: 16.67em;
+  left: 16.67em;
+  width: 20em;
+  height: 20em;
+  animation: orbit 68.7s linear infinite;
+}
+
+.HTML {
+  top: 13.33em;
+  left: 13.33em;
+  width: 26.67em;
+  height: 26.67em;
+  animation: orbit 48.7s linear infinite;
+}
+
+.Python {
+  top: 8em;
+  left: 8em;
+  width: 37.33em;
+  height: 37.33em;
+  animation: orbit 36.5s linear infinite;
+}
+
+.Data {
+  top: 2.67em;
+  right: -0.67em;
+  width: 9.33em;
+  height: 9.33em;
+  animation: orbit 2.7s linear infinite;
+}
+
+.C {
+  top: 2.67em;
+  left: 3.33em;
+  width: 48em;
+  height: 48em;
+  animation: orbit 26.5s linear infinite;
+}
+
+.JAVA {
+  top: -2.67em;
+  left: -2.67em;
+  width: 60em;
+  height: 60em;
+  animation: orbit 21s linear infinite;
+}
+
+.SQL {
+  top: -9.33em;
+  left: -9.33em;
+  width: 73.33em;
+  height: 73.33em;
+  animation: orbit 17s linear infinite;
+}
+
+.PHP {
+  top: -16em;
+  left: -16em;
+  width: 86.67em;
+  height: 86.67em;
+  animation: orbit 19s linear infinite;
+}
+
+.CSS {
+  top: -22.67em;
+  left: -22.67em;
+  width: 100em;
+  height: 100em;
+  animation: orbit 15s linear infinite;
+}
+
+.Docker {
+  top: -29.33em;
+  left: -29.33em;
+  width: 113.33em;
+  height: 113.33em;
+  animation: orbit 18s linear infinite;
+}
+
+.JS:before, .HTML:before, .Python:before, .Data:before, .C:before, .CSS:before, .Docker:before, .JAVA:before, .SQL:before, .PHP:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  animation: orbit 50s linear infinite;
+    z-index: 10;
+}
+
+.JS:before {
+  top: 2em;
+  right: 1.07em;
+  width: 2.67em;
+  height: 2.67em;
+  background-image: url("../images/JS.png");
+  background-size: cover;
+}
+
+.HTML:before {
+  top: 2.67em;
+  right: 2.67em;
+  width: 2.67em;
+  height: 2.67em;
+  background-image: url("../images/HTML.png");
+  background-size: cover;
+}
+
+.Python:before {
+  top: 4em;
+  right: 0em;
+  width: 6.67em;
+  height: 6.67em;
+  background-image: url("../images/Python.png");
+  background-size: cover;
+}
+
+.Data:before {
+  top: 0.67em;
+  right: -0.2em;
+  width: 2em;
+  height: 2em;
+  background-image: url("../images/Data.png");
+  background-size: cover;
+}
+
+.C:before {
+  top: 6.67em;
+  right: 4em;
+  width: 4em;
+  height: 4em;
+  background-image: url("../images/C.png");
+  background-size: cover;
+}
+
+.JAVA:before {
+  top: 8em;
+  right: 4em;
+  width: 6.67em;
+  height: 6.67em;
+  background-image: url("../images/Java.png");
+  background-size: cover;
+}
+
+.SQL:before {
+  top: 10em;
+  right: 6.67em;
+  width: 6em;
+  height: 6em;
+  background-image: url("../images/SQL.png");
+  background-size: cover;
+}
+
+.PHP:before {
+  top: 12em;
+  right: 8.67em;
+  width: 5.33em;
+  height: 5.33em;
+  background-image: url("../images/PHP.png");
+  background-size: cover;
+}
+
+.CSS:before {
+  top: 13.33em;
+  right: 10.67em;
+  width: 5.33em;
+  height: 5.33em;
+  background-image: url("../images/CSS.png");
+  background-size: cover;
+}
+
+.Docker:before {
+  top: 14.67em;
+  right: 13.33em;
+  width: 5.33em;
+  height: 5.33em;
+  background-image: url("../images/Docker.png");
+  background-size: cover;
+}
+
+
+#fh5co-skills .container {
+    width: 100%;
+    padding: 0;
+}
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+    z-index: 0;
+}
+@media (max-width: 768px) {
+  .row2 {
+    flex-direction: column;
+  }
+}
+
+#fh5co-skills{
+  padding-bottom: 0;!important;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .unique {
+    height: 90.25vh;
+  }
+
+  .contient {
+    font-size: 5.33px;
+    width: 35.56em;
+    height: 35.56em;
+  }
+
+  .Git {
+    top: 13.33em;
+    left: 13.33em;
+    width: 8.89em;
+    height: 8.89em;
+    box-shadow: 0 0 2.67em rgb(255, 128, 0);
+  }
+
+  .JS {
+    top: 11.11em;
+    left: 11.11em;
+    width: 13.33em;
+    height: 13.33em;
+  }
+
+  .HTML {
+    top: 8.89em;
+    left: 8.89em;
+    width: 17.78em;
+    height: 17.78em;
+  }
+
+  .Python {
+    top: 5.33em;
+    left: 5.33em;
+    width: 24.89em;
+    height: 24.89em;
+  }
+
+  .Data {
+    top: 1.78em;
+    right: -0.44em;
+    width: 6.22em;
+    height: 6.22em;
+  }
+
+  .C {
+    top: 1.78em;
+    left: 2.22em;
+    width: 32em;
+    height: 32em;
+  }
+
+  .JAVA {
+    top: -1.78em;
+    left: -1.78em;
+    width: 40em;
+    height: 40em;
+  }
+
+  .SQL {
+    top: -6.22em;
+    left: -6.22em;
+    width: 48.89em;
+    height: 48.89em;
+  }
+
+  .PHP {
+    top: -10.67em;
+    left: -10.67em;
+    width: 57.78em;
+    height: 57.78em;
+  }
+
+  .CSS {
+    top: -15.11em;
+    left: -15.11em;
+    width: 66.67em;
+    height: 66.67em;
+  }
+
+  .Docker {
+    top: -19.56em;
+    left: -19.56em;
+    width: 75.56em;
+    height: 75.56em;
+  }
+
+  .JS:before {
+    top: 1.33em;
+    right: 0.71em;
+    width: 1.78em;
+    height: 1.78em;
+  }
+
+  .HTML:before {
+    top: 1.78em;
+    right: 1.78em;
+    width: 1.78em;
+    height: 1.78em;
+  }
+
+  .Python:before {
+    top: 2.67em;
+    right: 0em;
+    width: 4.44em;
+    height: 4.44em;
+  }
+
+  .Data:before {
+    top: 0.44em;
+    right: -0.13em;
+    width: 1.33em;
+    height: 1.33em;
+  }
+
+  .C:before {
+    top: 4.44em;
+    right: 2.67em;
+    width: 2.67em;
+    height: 2.67em;
+  }
+
+  .JAVA:before {
+    top: 5.33em;
+    right: 2.67em;
+    width: 4.44em;
+    height: 4.44em;
+  }
+
+  .SQL:before {
+    top: 6.67em;
+    right: 4.44em;
+    width: 4em;
+    height: 4em;
+  }
+
+  .PHP:before {
+    top: 8em;
+    right: 5.78em;
+    width: 3.56em;
+    height: 3.56em;
+  }
+
+  .CSS:before {
+    top: 8.89em;
+    right: 7.11em;
+    width: 3.56em;
+    height: 3.56em;
+  }
+
+  .Docker:before {
+    top: 9.78em;
+    right: 8.89em;
+    width: 3.56em;
+    height: 3.56em;
+  }
+}

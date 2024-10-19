@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+    }
+    img {
+      max-width: 70vw;
+      max-height: 70vh;
+    }
+  </style>
+</head>
+<body>
+  <img src="" alt="Enlarged Image" id="enlargedImage">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const imageUrl = urlParams.get('src');
+      document.getElementById('enlargedImage').src = imageUrl;
+    });
+  </script>
+</body>
+</html>
